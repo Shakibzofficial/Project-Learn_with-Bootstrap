@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.main-lang {
+    position: relative;
+    float: right;
+    right: 40px;
+    z-index: 1;
+}
+
+.lang {
+    position: absolute;
+    padding-top: 10px;
+}
+
+.selected-lang {
+    text-align: right;
+}
+
+.selected-lang > span::before {
+    content: "";
+    background-image: url(../image/English-flag.jpg);
+    width: 30px;
+    height: 30px;
+    right: 65px;
+    top: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.selected-lang > span {
+    padding-right: 10px;
+    color: white;
+}
+
+.other-lang {
+    position: relative;
+}
+
+.other-lang > ul {
+    background-color: #1d385a;
+    padding-left: 0px;
+    right: 0;
+    top: -10px;
+    position: absolute;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.other-lang > ul > li {
+    list-style: none;
+}
+
+.other-lang > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: #d7dee4;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.other-lang > ul > li > .FR::before {
+    content: "";
+    background-image: url(../image/French-flag.jpg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 23px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.other-lang > ul > li > .EN::before {
+    content: "";
+    background-image: url(../image/English-flag.jpg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.other-lang > ul > li > .IT::before {
+    content: "";
+    background-image: url(../image/Italian-flag.jpg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.other-lang > ul > li > .SP::before {
+    content: "";
+    background-image: url(../image/Spanish-flag.jpg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 124px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.other-lang > ul > li > .PR::before {
+    content: "";
+    background-image: url(../image/Portuguese-flag.jpg);
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 158px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.lang:hover .other-lang > ul {
+    display: inline-block;
+}
+
+header {
+    background-color: #2f4d6f;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar-collapse {
+    flex-grow: inherit;
+    align-items: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.main-header-part > .left-side-title::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #fefefe;
+    position: absolute;
+    left: -20px;
+}
+
+.main-header-part > .left-side-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #fefefe;
+}
+
+.main-header-part > .left-side-text {
+    color: #fefefe;
+}
+
+.main-header-part > .left-side-btn {
+    font-family: 'Montserrat', sans-serif;
+    color: #f5d76e;
+}
+
+.main-header-part-right {
+    background-color: #f5d76e;
+}
+
+.main-header-part-right h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f4e71;
+}
+
+.main-header-part-right p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-select {
+    color: #6c757d;
+}
+
+.form-floating {
+    color: #6c757d;
+}
+
+.form-floating > .form-control {
+    resize: none;
+
+}
+
+.btn {
+    background-color: #2f4e71;
+    border-color: #2f4e71;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: white;
+    border-color: white;
+    color: #2f4e71;
+}
+
+.membership-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+
+.fa-unlock {
+    position: absolute;
+    left: 0;
+    background-color: #f5d76e;
+    color: white;
+}
+
+.courses-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+.courses {
+    background-color: #fafafb;
+
+}
+
+
+.list-group {
+    border-right: 7px solid #f5d76e;
+    background-color: #2f4e71;
+}
+
+.list-group-item {
+    background: 0;
+    color: white;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list-group-item.active {
+    background-color: #f5d76e;
+    border-color: #f5d76e;
+    color: #273342;
+}
+
+.list-group-item-action:hover {
+    background-color: #f5d76e;
+    color: #273342;
+}
+
+.course-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.watch-title {
+    color: #2f4e71;
+}
+
+.popular-courses-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+.pc-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.popular-c-btn > .btn:hover {
+    background-color: #f2d779;
+    color: #2f4e71;
+}
+
+.popular-c-part > .overlay {
+    background-color: #f2d779;
+    width: 99%;
+    height: 200px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popular-c-part > .overlay > .fa-play-circle {
+    font-size: 70px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.popular-c-part:hover > .overlay {
+    opacity: 0.9;
+}
+
+.timer {
+    background-color: #f5d76e;
+}
+
+.timer-data > .fa-smile {
+    /*    position: absolute;*/
+    font-size: 60px;
+    left: -55px;
+}
+
+@media screen and (max-width:1023px) {
+    .timer-data {
+        padding-bottom: 30px;
+        padding-top: 50px;
+        text-align: center;
+        margin-left: 0px !important;
+    }
+
+    .timer-data > .fa-smile {
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
+
+.teacher-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+.teacher-img {
+    width: 100%;
+    height: 321px;
+    object-fit: cover;
+}
+
+.teacher-img-part > .overlay {
+    background-color: #f2d779;
+    width: 99%;
+    height: 321px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+}
+
+.teacher-img-part > .overlay > .fab {
+    font-size: 20px;
+    color: white;
+    padding-right: 15px;
+    top: 50%;
+    position: relative;
+}
+
+.teacher-img-part:hover > .overlay {
+    opacity: 0.7;
+}
+
+.pricing {
+    background-image: url(../image/pricing-bg.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.pricing-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+/*
+.pricing-part-main > .border-end{
+    border-right: 1px solid #e7e7e7 !important;
+}
+*/
+.pricing-part-main {
+    position: relative;
+}
+
+.starter-part-top {
+    background-color: #112a46;
+    color: white;
+}
+
+.starter-part-top > .fa-sort-down {
+    font-size: 70px;
+    color: #112a46;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.starter-part-middle {
+    background-color: white;
+}
+
+.starter-part-middle-title {
+    background-color: #f8f8f8;
+}
+
+.starter-part-bottom {
+    background-color: #f8f8f8;
+}
+
+.starter-part-bottom-btn:hover {
+    background-color: #112a46;
+    color: white;
+}
+
+.unlimited > .unlimited-part-top {
+    background-color: #f5d76e;
+    color: white;
+}
+
+.unlimited > .unlimited-part-top > .fa-sort-down {
+    color: #f5d76e;
+    font-size: 70px;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.unlimited-part-middle {
+    background-color: white;
+}
+
+.unlimited-part-middle-title {
+    background-color: #f8f8f8;
+}
+
+.unlimited-part-bottom {
+    background-color: #f8f8f8;
+}
+
+.unlimited-part-bottom-btn:hover {
+    background-color: #112a46;
+    color: white;
+}
+
+.unlimited {
+    position: relative;
+    top: -32px;
+}
+
+.students-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+
+.student-profile {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.image-part > .overlay {
+    background-color: #f2d779;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.students-image:hover > .image-part > .overlay{
+    opacity: 0.8;
+}
+
+@media screen and (max-width:991px) {
+    .image-part{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .student-profile {
+        width: 100%;
+        height: 400px;
+    }
+    .image-part > .overlay {
+    height: 400px;
+}
+}
+.image-part > .overlay .fa-quote-right{
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.news-update{
+    background-color: #f5d76e;
+}
+.news-update-title{
+    color: white;
+}
+.question{
+    background-image: url(../image/question-bg.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.question-part::before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5d76e;
+    position: absolute;
+}
+.map-image{
+    width: 100%;
+    height: 100%;
+    object-fit:cover; 
+}
+.question-btn:hover{
+    background-color: #f5d76e;
+}
+
+.footer{
+    background-color: #2f4e71;
+}
+.footer-about-title{
+    color: white;
+}
+.footer-about-text , .footer-about-2nd-text{
+    color: #dcdce5;
+}
+.footer-about > .social-icons > .fab{
+    color: white;
+    font-size: 15px;
+    background-color: #242526;
+    padding: 10px;
+}
+
+.footer-news-title{
+    color: white;
+}
+.footer-news-text{
+    color: #dcdce5;
+}
+.footer-news-text > span{
+    color: #f5d76e;
+}
+.footer-payment-title{
+    color: white;
+}
+.payment-img{
+    width: 100%;
+    height: 30px;
+    object-fit: contain;
+}
+.footer-end{
+    background-color: #243c58;
+    color: white;
+}
