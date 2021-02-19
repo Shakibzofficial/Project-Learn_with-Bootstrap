@@ -395,10 +395,18 @@ header {
     border-right: 1px solid #e7e7e7 !important;
 }
 */
+.pricing-part-title{
+    color: white;
+}
+.pricing-part-text{
+    color: white;
+}
 .pricing-part-main {
     position: relative;
 }
-
+.pricing-part-main-text{
+    color: white;
+}
 .starter-part-top {
     background-color: #112a46;
     color: white;
